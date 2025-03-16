@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'http://ec2-18-207-215-12.compute-1.amazonaws.com:8080',
+  baseUrl: 'http://18.207.215.12:8080',
 };
 
 /*

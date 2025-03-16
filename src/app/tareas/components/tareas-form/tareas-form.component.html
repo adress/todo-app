@@ -1,0 +1,69 @@
+<form [formGroup]="miFormulario" (ngSubmit)="guardar()">
+    <button type="button" class="ms-2 mt-2 btn-close" aria-label="Close" (click)="cerrar()"></button>
+    <div class="row p-3">
+        <div *ngIf="errors.length > 0"
+            style="margin-top: 0px; margin-bottom: 0px; padding-bottom: 0px; padding-top: 0px;"
+            class="alert alert-danger alert-dismissible fade show" role="alert">
+            <ul>
+                <li *ngFor="let error of errors">
+                    <p class="fs-6" style="margin: 0px">{{error}}</p>
+                </li>
+            </ul>
+            <button type="button" class="btn-close" (click)="cerrarErrores()" aria-label="Close"
+                style="font-size: x-small; padding: 10px;"></button>
+        </div>
+
+        <div class="py-2 form-group d-flex flex-row-reverse">
+            <div style="max-height: fit-content; align-items: center">
+                <mat-slide-toggle formControlName="finalizada" labelPosition="before">Finalizada</mat-slide-toggle>
+            </div>
+        </div>
+        <div class="mb-2 form-group">
+            <label>Título</label>
+            <input [ngClass]="{'text-decoration-line-through' : miFormulario.controls['finalizada'].value}" formControlName="titulo"
+                type="text" class="form-control">
+        </div>
+
+        <div class="mb-2 form-group">
+            <label>Descripción <b>*</b></label>
+            <textarea formControlName="descripcion" class="form-control" rows="5"></textarea>
+        </div>
+
+        <div class="col-md-6">
+            <fieldset class="mb-2" disabled>
+                <label for="disabledTextInput" class="form-label">Fecha de creación</label>
+                <input type="text" class="form-control" value="{{tarea.fechaCreacion | date}}">
+            </fieldset>
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Fecha de Vencimiento <b>*</b></label>
+            <div class="mb-2 input-group">
+                <input formControlName="fechaVencimiento" placeholder="DD/MM/YYYY" class="form-control"
+                    [matDatepicker]="picker">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </div>
+        </div>
+
+        <div class="mt-3 d-flex justify-content-between">
+            <div class="p-2 bd-highlight">
+                <button type="submit" mat-raised-button color="primary" [disabled]="miFormulario.invalid">
+                    <mat-icon>save</mat-icon>
+                    {{ ( tarea.id )? 'Actualizar' : 'Crear' }}
+                </button>
+            </div>
+            <div class="p-2 bd-highlight">
+                <button *ngIf="tarea.id" type="button" mat-raised-button color="warn" (click)="borrar()">
+                    <mat-icon>remove</mat-icon>
+                    Borrar
+                </button>
+            </div>
+        </div>
+
+        <!-- <span class="spacer"></span> -->
+
+    </div>
+</form>
+<!-- </div>
+</div> -->

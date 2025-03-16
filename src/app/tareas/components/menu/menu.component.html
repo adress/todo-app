@@ -1,0 +1,32 @@
+<mat-toolbar id="myToolBar">
+    <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button> -->
+    <span class="d-none d-sm-block ms-1">TareasApp</span>
+
+    <span class="custom-spacer custom-spacer1"></span>
+
+    <div class="input-group contenedor-barra">
+        <input #barraBusqueda id="barraBusqueda" type="text" class="form-control" placeholder="Buscar...">
+        <button type="button" (click)="limpiar()" class="btn bg-transparent" style="margin-left: -40px; z-index: 100;">
+            <i class="fa fa-times"></i>
+        </button>
+    </div>
+
+    <span class="custom-spacer"></span>
+    <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+    </button> -->
+    <span class="me-3 d-none d-sm-block">{{ auth.username }}</span>
+    <button class="btn-logout ms-1 btn btn-outline-danger" (click)="logout()">
+        Logout
+    </button>
+</mat-toolbar>
+
+<!-- <div class="sidenav">
+    <a href="#">Todas</a>
+    <a href="#">Mis Tareas</a>
+</div> -->

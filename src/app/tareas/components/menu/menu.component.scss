@@ -1,0 +1,25 @@
+@media (max-width: 575px) {
+    .contenedor-barra{
+        max-width: 90% !important;
+    }
+}
+
+#barraBusqueda{
+    max-width: 100%;
+}
+
+.contenedor-barra{
+    max-width: 50%;
+}
+
+/*Tool bar*/
+.mat-toolbar{
+    position: fixed !important;
+    top: 0px;
+    z-index: 1;
+}
+
+.btn-logout:hover {
+    background-color: initial;
+    color: initial;
+}

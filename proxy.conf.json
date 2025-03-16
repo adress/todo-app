@@ -1,0 +1,7 @@
+{
+  "/api": {
+    "target": "https://todo-app-adress-3a5c38926584.herokuapp.com",
+    "secure": false,
+    "changeOrigin": true
+  }
+}

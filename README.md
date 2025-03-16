@@ -53,9 +53,9 @@ Sigue estos pasos para ejecutar el proyecto en tu máquina local:
     ```
     
 
-# Despiegue en AWS
-Puede ingresar a la app de pruebas deplegada en AWS AQUI
-https://ec2-34-207-229-149.compute-1.amazonaws.com/
+# Despiegue en netlify
+Puede ingresar a la app de pruebas deplegada en netlify con backend en AWS AQUI
+https://rad-tartufo-216170.netlify.app/auth/login
 
 **usuario**: adress\
 **password**: 12345

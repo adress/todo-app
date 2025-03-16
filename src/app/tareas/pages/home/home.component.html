@@ -180,7 +180,11 @@
         class="py-0 grid-five col-lg-3 col-md-4 col-sm-12 col-12 my-2 masonry-item"
       >
         <div class="card border-primary">
-          <div class="card-body" (click)="abrirDialogGuardar(tarea.id!)">
+          <div
+            class="card-body"
+            (click)="abrirDialogGuardar(tarea.id!)"
+            style="cursor: pointer"
+          >
             <div class="card-title">
               <!-- <mat-checkbox (click)="$event.stopPropagation()" [checked]="tarea.finalizada"
                                 (change)="nuevoEstado($event.checked, tarea)">

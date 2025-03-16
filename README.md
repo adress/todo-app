@@ -1,59 +1,61 @@
-# TodoApp
+# **todoapp - Gestión de Tareas con Angular 19**
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
+¡Bienvenido a **todoapp**! Una aplicación moderna y eficiente para gestionar tus tareas, desarrollada con las últimas tecnologías web. Este proyecto es una muestra de cómo combinar **Angular 19**, **Bootstrap 5**, **Angular Material**, **Formularios Reactivos**, **Interceptores HTTP**, **Guards** y mucho más para crear una experiencia de usuario fluida y atractiva.
 
-## Development server
+---
 
-To start a local development server, run:
+## **Características Principales**
 
-```bash
-ng serve
-```
+- **Angular 19**: Utilizamos la última versión de Angular para garantizar un rendimiento óptimo y acceso a las características más recientes.
+- **Bootstrap 5**: Diseño responsive y moderno gracias a Bootstrap 5.
+- **Formularios Reactivos**: Validación avanzada y manejo eficiente de formularios.
+- **Filtros Inteligentes**: Encuentra tus tareas fácilmente con filtros dinámicos.
+- **Angular Material**: Componentes UI elegantes y funcionales.
+- **Interceptores HTTP**: Manejo centralizado de solicitudes y respuestas HTTP.
+- **Guards (CanActivate)**: Protección de rutas y control de acceso.
+- **SCSS**: Estilos modularizados y fáciles de mantener.
+- **Despliegue Remoto**: Accede a la aplicación desde cualquier lugar.
+- **Flujo de OAuth2**: Se realiza fujo de autenticación de tipo grand password de Oauth2
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## **Tecnologías Utilizadas**
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Frontend**:
+  - Angular 19
+  - Bootstrap 5
+  - Angular Material
+  - SCSS
+  - Formularios Reactivos
+  - RxJS
+  - Interceptores HTTP
+  - Guards (CanActivate)
 
-```bash
-ng generate component component-name
-```
+- **Backend**:
+  - API REST (simulada o real, dependiendo del entorno).
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## **Cómo Ejecutar el Proyecto Localmente**
 
-## Building
+Sigue estos pasos para ejecutar el proyecto en tu máquina local:
 
-To build the project run:
+### **Requisitos Previos**
 
-```bash
-ng build
-```
+1. **Node.js**: Asegúrate de tener Node.js instalado (versión 18 o superior).
+2. **Angular CLI**: Instala Angular CLI globalmente si no lo tienes:
+   ```bash
+   npm install -g @angular/cli@latest
+   ```
+3. **Ejecuta el proyecto**
+    ```
+    ng serve -o
+    ```
+    
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+# Despiegue en AWS
+Puede ingresar a la app de pruebas deplegada en AWS AQUI
+https://ec2-34-207-229-149.compute-1.amazonaws.com/
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**usuario**: adress\
+**password**: 12345

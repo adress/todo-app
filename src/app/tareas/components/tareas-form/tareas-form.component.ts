@@ -7,8 +7,6 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
 import { MatButtonModule } from '@angular/material/button';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatChipsModule } from '@angular/material/chips';
@@ -18,9 +16,7 @@ import { MatChipsModule } from '@angular/material/chips';
   templateUrl: './tareas-form.component.html',
   imports: [CommonModule, ReactiveFormsModule,
     MatButtonModule,
-    MatDividerModule,
     MatIconModule,
-    MatToolbarModule,
     MatSlideToggleModule,
     MatDialogModule,
     MatDatepickerModule,

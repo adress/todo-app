@@ -6,31 +6,20 @@ import { DialogComponent } from '../../components/dialog/dialog.component';
 import { MenuComponent } from '../../components/menu/menu.component';
 import { CommonModule } from '@angular/common';
 import { NgxMasonryModule } from 'ngx-masonry';
-import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatIconModule } from '@angular/material/icon';
-import { MatMomentDateModule } from '@angular/material-moment-adapter';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { MatDialogModule } from '@angular/material/dialog';
-import { MatChipsModule } from '@angular/material/chips';
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  imports: [CommonModule, MatDividerModule, MenuComponent, NgxMasonryModule,
-
+  imports: [
+    CommonModule,
     MatButtonModule,
-    MatDividerModule,
     MatIconModule,
-    MatToolbarModule,
-    MatSlideToggleModule,
-    MatDialogModule,
-    MatDatepickerModule,
-    MatMomentDateModule,
-    MatChipsModule
+    MatDividerModule,
+    NgxMasonryModule,
+    MenuComponent,
   ]
 })
 export default class HomeComponent implements OnInit {

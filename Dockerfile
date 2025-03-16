@@ -2,11 +2,10 @@
 FROM node:20 as build
 WORKDIR /app
 
-ARG BUILD_ENV=build:prod
 COPY package*.json /app/
 RUN npm ci
 COPY . /app
-RUN npm run $BUILD_ENV
+RUN npm run build -- --configuration=production
 
 # Etapa 2: Servir la aplicación construida con Nginx
 FROM nginx:alpine

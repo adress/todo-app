@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'http://18.207.215.12:8080',
+  baseUrl: 'https://todo-app-adress-3a5c38926584.herokuapp.com',
 };
 
 /*

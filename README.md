@@ -54,8 +54,11 @@ Sigue estos pasos para ejecutar el proyecto en tu máquina local:
     
 
 # Despiegue en AWS
-Puede ingresar a la app de pruebas deplegada en netlify con backend en AWS AQUI
+Puede ingresar a la app de pruebas deplegada en AWS AQUI
 http://ec2-18-207-215-12.compute-1.amazonaws.com:4200/
+
+# Despliegue en heroku y netlify
+https://glittery-phoenix-4db233.netlify.app
 
 **usuario**: adress\
 **password**: 12345
